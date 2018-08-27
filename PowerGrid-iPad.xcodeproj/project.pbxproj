@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB283F4E2134974700DD8379 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB283F4D2134974700DD8379 /* AppDelegate.swift */; };
+		DB283F502134974700DD8379 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB283F4F2134974700DD8379 /* ViewController.swift */; };
+		DB283F532134974700DD8379 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB283F512134974700DD8379 /* Main.storyboard */; };
+		DB283F562134974700DD8379 /* PowerGrid_iPad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB283F542134974700DD8379 /* PowerGrid_iPad.xcdatamodeld */; };
+		DB283F582134974A00DD8379 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB283F572134974A00DD8379 /* Assets.xcassets */; };
+		DB283F5B2134974A00DD8379 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB283F592134974A00DD8379 /* LaunchScreen.storyboard */; };
+		DB283F662134974A00DD8379 /* PowerGrid_iPadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB283F652134974A00DD8379 /* PowerGrid_iPadTests.swift */; };
+		DB283F712134974A00DD8379 /* PowerGrid_iPadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB283F702134974A00DD8379 /* PowerGrid_iPadUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB283F622134974A00DD8379 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB283F422134974700DD8379 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB283F492134974700DD8379;
+			remoteInfo = "PowerGrid-iPad";
+		};
+		DB283F6D2134974A00DD8379 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB283F422134974700DD8379 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB283F492134974700DD8379;
+			remoteInfo = "PowerGrid-iPad";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB283F4A2134974700DD8379 /* PowerGrid-iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PowerGrid-iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB283F4D2134974700DD8379 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB283F4F2134974700DD8379 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB283F522134974700DD8379 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB283F552134974700DD8379 /* PowerGrid_iPad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PowerGrid_iPad.xcdatamodel; sourceTree = "<group>"; };
+		DB283F572134974A00DD8379 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB283F5A2134974A00DD8379 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB283F5C2134974A00DD8379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB283F612134974A00DD8379 /* PowerGrid-iPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PowerGrid-iPadTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB283F652134974A00DD8379 /* PowerGrid_iPadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerGrid_iPadTests.swift; sourceTree = "<group>"; };
+		DB283F672134974A00DD8379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB283F6C2134974A00DD8379 /* PowerGrid-iPadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PowerGrid-iPadUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB283F702134974A00DD8379 /* PowerGrid_iPadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerGrid_iPadUITests.swift; sourceTree = "<group>"; };
+		DB283F722134974A00DD8379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB283F472134974700DD8379 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB283F5E2134974A00DD8379 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB283F692134974A00DD8379 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB283F412134974700DD8379 = {
+			isa = PBXGroup;
+			children = (
+				DB283F4C2134974700DD8379 /* PowerGrid-iPad */,
+				DB283F642134974A00DD8379 /* PowerGrid-iPadTests */,
+				DB283F6F2134974A00DD8379 /* PowerGrid-iPadUITests */,
+				DB283F4B2134974700DD8379 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB283F4B2134974700DD8379 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB283F4A2134974700DD8379 /* PowerGrid-iPad.app */,
+				DB283F612134974A00DD8379 /* PowerGrid-iPadTests.xctest */,
+				DB283F6C2134974A00DD8379 /* PowerGrid-iPadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB283F4C2134974700DD8379 /* PowerGrid-iPad */ = {
+			isa = PBXGroup;
+			children = (
+				DB283F4D2134974700DD8379 /* AppDelegate.swift */,
+				DB283F4F2134974700DD8379 /* ViewController.swift */,
+				DB283F512134974700DD8379 /* Main.storyboard */,
+				DB283F572134974A00DD8379 /* Assets.xcassets */,
+				DB283F592134974A00DD8379 /* LaunchScreen.storyboard */,
+				DB283F5C2134974A00DD8379 /* Info.plist */,
+				DB283F542134974700DD8379 /* PowerGrid_iPad.xcdatamodeld */,
+			);
+			path = "PowerGrid-iPad";
+			sourceTree = "<group>";
+		};
+		DB283F642134974A00DD8379 /* PowerGrid-iPadTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB283F652134974A00DD8379 /* PowerGrid_iPadTests.swift */,
+				DB283F672134974A00DD8379 /* Info.plist */,
+			);
+			path = "PowerGrid-iPadTests";
+			sourceTree = "<group>";
+		};
+		DB283F6F2134974A00DD8379 /* PowerGrid-iPadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB283F702134974A00DD8379 /* PowerGrid_iPadUITests.swift */,
+				DB283F722134974A00DD8379 /* Info.plist */,
+			);
+			path = "PowerGrid-iPadUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB283F492134974700DD8379 /* PowerGrid-iPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB283F752134974A00DD8379 /* Build configuration list for PBXNativeTarget "PowerGrid-iPad" */;
+			buildPhases = (
+				DB283F462134974700DD8379 /* Sources */,
+				DB283F472134974700DD8379 /* Frameworks */,
+				DB283F482134974700DD8379 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PowerGrid-iPad";
+			productName = "PowerGrid-iPad";
+			productReference = DB283F4A2134974700DD8379 /* PowerGrid-iPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB283F602134974A00DD8379 /* PowerGrid-iPadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB283F782134974A00DD8379 /* Build configuration list for PBXNativeTarget "PowerGrid-iPadTests" */;
+			buildPhases = (
+				DB283F5D2134974A00DD8379 /* Sources */,
+				DB283F5E2134974A00DD8379 /* Frameworks */,
+				DB283F5F2134974A00DD8379 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB283F632134974A00DD8379 /* PBXTargetDependency */,
+			);
+			name = "PowerGrid-iPadTests";
+			productName = "PowerGrid-iPadTests";
+			productReference = DB283F612134974A00DD8379 /* PowerGrid-iPadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB283F6B2134974A00DD8379 /* PowerGrid-iPadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB283F7B2134974A00DD8379 /* Build configuration list for PBXNativeTarget "PowerGrid-iPadUITests" */;
+			buildPhases = (
+				DB283F682134974A00DD8379 /* Sources */,
+				DB283F692134974A00DD8379 /* Frameworks */,
+				DB283F6A2134974A00DD8379 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB283F6E2134974A00DD8379 /* PBXTargetDependency */,
+			);
+			name = "PowerGrid-iPadUITests";
+			productName = "PowerGrid-iPadUITests";
+			productReference = DB283F6C2134974A00DD8379 /* PowerGrid-iPadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB283F422134974700DD8379 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Justin&Nick";
+				TargetAttributes = {
+					DB283F492134974700DD8379 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					DB283F602134974A00DD8379 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = DB283F492134974700DD8379;
+					};
+					DB283F6B2134974A00DD8379 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = DB283F492134974700DD8379;
+					};
+				};
+			};
+			buildConfigurationList = DB283F452134974700DD8379 /* Build configuration list for PBXProject "PowerGrid-iPad" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB283F412134974700DD8379;
+			productRefGroup = DB283F4B2134974700DD8379 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB283F492134974700DD8379 /* PowerGrid-iPad */,
+				DB283F602134974A00DD8379 /* PowerGrid-iPadTests */,
+				DB283F6B2134974A00DD8379 /* PowerGrid-iPadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB283F482134974700DD8379 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB283F5B2134974A00DD8379 /* LaunchScreen.storyboard in Resources */,
+				DB283F582134974A00DD8379 /* Assets.xcassets in Resources */,
+				DB283F532134974700DD8379 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB283F5F2134974A00DD8379 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB283F6A2134974A00DD8379 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB283F462134974700DD8379 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB283F502134974700DD8379 /* ViewController.swift in Sources */,
+				DB283F562134974700DD8379 /* PowerGrid_iPad.xcdatamodeld in Sources */,
+				DB283F4E2134974700DD8379 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB283F5D2134974A00DD8379 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB283F662134974A00DD8379 /* PowerGrid_iPadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB283F682134974A00DD8379 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB283F712134974A00DD8379 /* PowerGrid_iPadUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB283F632134974A00DD8379 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB283F492134974700DD8379 /* PowerGrid-iPad */;
+			targetProxy = DB283F622134974A00DD8379 /* PBXContainerItemProxy */;
+		};
+		DB283F6E2134974A00DD8379 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB283F492134974700DD8379 /* PowerGrid-iPad */;
+			targetProxy = DB283F6D2134974A00DD8379 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB283F512134974700DD8379 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB283F522134974700DD8379 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB283F592134974A00DD8379 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB283F5A2134974A00DD8379 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB283F732134974A00DD8379 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB283F742134974A00DD8379 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB283F762134974A00DD8379 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q233WKHDCS;
+				INFOPLIST_FILE = "PowerGrid-iPad/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "justin-nick.PowerGrid-iPad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB283F772134974A00DD8379 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q233WKHDCS;
+				INFOPLIST_FILE = "PowerGrid-iPad/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "justin-nick.PowerGrid-iPad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB283F792134974A00DD8379 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q233WKHDCS;
+				INFOPLIST_FILE = "PowerGrid-iPadTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "justin-nick.PowerGrid-iPadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PowerGrid-iPad.app/PowerGrid-iPad";
+			};
+			name = Debug;
+		};
+		DB283F7A2134974A00DD8379 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q233WKHDCS;
+				INFOPLIST_FILE = "PowerGrid-iPadTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "justin-nick.PowerGrid-iPadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PowerGrid-iPad.app/PowerGrid-iPad";
+			};
+			name = Release;
+		};
+		DB283F7C2134974A00DD8379 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q233WKHDCS;
+				INFOPLIST_FILE = "PowerGrid-iPadUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "justin-nick.PowerGrid-iPadUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PowerGrid-iPad";
+			};
+			name = Debug;
+		};
+		DB283F7D2134974A00DD8379 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q233WKHDCS;
+				INFOPLIST_FILE = "PowerGrid-iPadUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "justin-nick.PowerGrid-iPadUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PowerGrid-iPad";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB283F452134974700DD8379 /* Build configuration list for PBXProject "PowerGrid-iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB283F732134974A00DD8379 /* Debug */,
+				DB283F742134974A00DD8379 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB283F752134974A00DD8379 /* Build configuration list for PBXNativeTarget "PowerGrid-iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB283F762134974A00DD8379 /* Debug */,
+				DB283F772134974A00DD8379 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB283F782134974A00DD8379 /* Build configuration list for PBXNativeTarget "PowerGrid-iPadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB283F792134974A00DD8379 /* Debug */,
+				DB283F7A2134974A00DD8379 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB283F7B2134974A00DD8379 /* Build configuration list for PBXNativeTarget "PowerGrid-iPadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB283F7C2134974A00DD8379 /* Debug */,
+				DB283F7D2134974A00DD8379 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DB283F542134974700DD8379 /* PowerGrid_iPad.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DB283F552134974700DD8379 /* PowerGrid_iPad.xcdatamodel */,
+			);
+			currentVersion = DB283F552134974700DD8379 /* PowerGrid_iPad.xcdatamodel */;
+			path = PowerGrid_iPad.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DB283F422134974700DD8379 /* Project object */;
+}
