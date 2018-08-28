@@ -33,8 +33,11 @@ class ViewControllerMain: UIViewController {
     @IBOutlet var slotInputTextFields: [UITextField]!
     @IBOutlet weak var botDisplayView: UIView!
     @IBOutlet var botDisplayLabels: [UILabel]!
-    
     @IBOutlet var botDisplayButtons: [UIButton]!
+    
+    @IBOutlet weak var moneyAnimationView: UIView!
+    @IBOutlet weak var moneyAnimationValueLabel: UILabel!
+    @IBOutlet weak var moneyBankLocView: UIView!
     
     // Util functions
     func setupButton(button: UIButton) {
@@ -191,24 +194,68 @@ class ViewControllerMain: UIViewController {
         }
     }
     
-    
+    func addMoneyAnimation(value: Int, add: Bool, dest: Int) {
+        let destination = self.slotViews[dest].convert(self.slotOverviewButtons[dest].center, to: self.moneyAnimationView.superview)
+        
+        moneyAnimationView.layer.cornerRadius = 0.5 * moneyAnimationView.bounds.size.width
+        moneyAnimationView.layer.borderWidth = 5
+        moneyAnimationView.layer.borderColor = UIColor.black.cgColor
+        moneyAnimationValueLabel.text = String(value)
+        moneyAnimationView.alpha = 1.0
+        
+        let needRedisplayBot = !botDisplayView.isHidden
+        botDisplayView.isHidden = true
+        
+        if add {
+           moneyAnimationView.center = moneyBankLocView.center
+            moneyAnimationView.isHidden = false
+            
+            UIView.animate(withDuration: 1.0, animations: {() -> Void in
+                self.moneyAnimationView.center = destination
+                self.moneyAnimationView.alpha = 0.0
+            }, completion: {(true) -> Void in
+                self.moneyAnimationView.isHidden = true
+                if players[dest] is PGBot {
+                    self.slotOverviewButtons[dest].setTitle(String(players[dest].money), for:.normal)
+                    if (needRedisplayBot){
+                        self.botDisplayView.isHidden = false
+                    }
+                }
+            })
+        }
+        else {
+            moneyAnimationView.center = destination
+            moneyAnimationView.isHidden = false
+            
+            UIView.animate(withDuration: 1.0, animations: {() -> Void in
+                self.moneyAnimationView.center = self.moneyBankLocView.center
+                self.moneyAnimationView.alpha = 0.0
+            }, completion: {(true) -> Void in
+                self.moneyAnimationView.isHidden = true
+                if players[dest] is PGBot {
+                    self.slotOverviewButtons[dest].setTitle(String(players[dest].money), for:.normal)
+                    if (needRedisplayBot){
+                        self.botDisplayView.isHidden = false
+                    }
+                }
+            })
+        }
+    }
     @IBAction func changeMoney(_ sender: UIButton, forEvent event: UIEvent) {
         if sender.title(for: .normal) == "Earn" {
             let index = slotEarnButtons.index(of: sender)!
-            let result = Int(slotInputTextFields[index].text!)!
-            players[index].money += result
-            slotInputTextFields[index].text = ""
-            if players[index] is PGBot {
-                slotOverviewButtons[index].setTitle(String(players[index].money), for:.normal)
+            if let result = Int(slotInputTextFields[index].text!) {
+                players[index].money += result
+                slotInputTextFields[index].text = ""
+                addMoneyAnimation(value: result, add: true, dest: index)
             }
         }
         else if sender.title(for: .normal) == "Spend" {
             let index = slotSpendButtons.index(of: sender)!
-            let result = Int(slotInputTextFields[index].text!)!
-            players[index].money -= result
-            slotInputTextFields[index].text = ""
-            if players[index] is PGBot {
-                slotOverviewButtons[index].setTitle(String(players[index].money), for:.normal)
+            if let result = Int(slotInputTextFields[index].text!) {
+                players[index].money -= result
+                slotInputTextFields[index].text = ""
+                addMoneyAnimation(value: result, add: false, dest: index)
             }
         }
         self.view.endEditing(true)

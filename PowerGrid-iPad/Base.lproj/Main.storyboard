@@ -623,6 +623,24 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8A2-v4-dLD">
+                                <rect key="frame" x="181" y="245" width="82" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Value" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="zdt-sD-ozd">
+                                        <rect key="frame" x="6" y="23" width="71" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.87621270913299498" green="0.73825259505965002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T2R-S8-sGb">
+                                <rect key="frame" x="181" y="245" width="82" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1P-9u-xtQ">
                                 <rect key="frame" x="10" y="738" width="140" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -639,6 +657,9 @@
                     </view>
                     <connections>
                         <outlet property="botDisplayView" destination="YW5-jb-dlQ" id="Dz4-of-jea"/>
+                        <outlet property="moneyAnimationValueLabel" destination="zdt-sD-ozd" id="FLk-t3-3q0"/>
+                        <outlet property="moneyAnimationView" destination="8A2-v4-dLD" id="wf7-kG-q5z"/>
+                        <outlet property="moneyBankLocView" destination="T2R-S8-sGb" id="0rd-yR-blE"/>
                         <outletCollection property="colorButtons" destination="4iu-YU-Kuf" collectionClass="NSMutableArray" id="tup-gN-gOQ"/>
                         <outletCollection property="slotButtons" destination="vV0-55-oWX" collectionClass="NSMutableArray" id="cx4-Fx-UXb"/>
                         <outletCollection property="slotViews" destination="pI2-T3-Hvt" collectionClass="NSMutableArray" id="p3D-ht-4bu"/>
