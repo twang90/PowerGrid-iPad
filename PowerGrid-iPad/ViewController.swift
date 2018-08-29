@@ -11,7 +11,7 @@ import UIKit
 let maxPlayers = 6
 var players : [Player] = Array(repeating: Player(), count: maxPlayers)
 
-class ViewControllerMain: UIViewController {
+class ViewControllerBotMain: UIViewController {
     // Static variables
     static var slotButtonStorage : [UIButton] = []
     static var colorButtonStorage : [UIButton] = []
@@ -324,21 +324,21 @@ class ViewControllerMain: UIViewController {
         initSlots()
         
         // Restore previous storage
-        if (ViewControllerMain.slotButtonStorage.count != 0) {
-            for i in 0...ViewControllerMain.slotButtonStorage.count-1 {
-                slotButtons[i].backgroundColor = ViewControllerMain.slotButtonStorage[i].backgroundColor
-                slotButtons[i].setTitle(ViewControllerMain.slotButtonStorage[i].title(for: .normal), for: .normal)
-                slotButtons[i].setTitleColor(ViewControllerMain.slotButtonStorage[i].titleColor(for: .normal), for: .normal)
+        if (ViewControllerBotMain.slotButtonStorage.count != 0) {
+            for i in 0...ViewControllerBotMain.slotButtonStorage.count-1 {
+                slotButtons[i].backgroundColor = ViewControllerBotMain.slotButtonStorage[i].backgroundColor
+                slotButtons[i].setTitle(ViewControllerBotMain.slotButtonStorage[i].title(for: .normal), for: .normal)
+                slotButtons[i].setTitleColor(ViewControllerBotMain.slotButtonStorage[i].titleColor(for: .normal), for: .normal)
                 
             }
-            ViewControllerMain.slotButtonStorage.removeAll(keepingCapacity: false)
+            ViewControllerBotMain.slotButtonStorage.removeAll(keepingCapacity: false)
         }
-        if (ViewControllerMain.colorButtonStorage.count != 0) {
-            for i in 0...ViewControllerMain.colorButtonStorage.count-1 {
-                colorButtons[i].alpha = ViewControllerMain.colorButtonStorage[i].alpha
-                colorButtons[i].isEnabled = ViewControllerMain.colorButtonStorage[i].isEnabled
+        if (ViewControllerBotMain.colorButtonStorage.count != 0) {
+            for i in 0...ViewControllerBotMain.colorButtonStorage.count-1 {
+                colorButtons[i].alpha = ViewControllerBotMain.colorButtonStorage[i].alpha
+                colorButtons[i].isEnabled = ViewControllerBotMain.colorButtonStorage[i].isEnabled
             }
-            ViewControllerMain.colorButtonStorage.removeAll(keepingCapacity: false)
+            ViewControllerBotMain.colorButtonStorage.removeAll(keepingCapacity: false)
         }
     }
 
