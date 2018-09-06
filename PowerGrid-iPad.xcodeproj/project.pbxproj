@@ -106,12 +106,12 @@
 				DB283F4D2134974700DD8379 /* AppDelegate.swift */,
 				DB283F4F2134974700DD8379 /* ViewController.swift */,
 				DB283F8A2134C56D00DD8379 /* Models.swift */,
+				DB283F8D2136113400DD8379 /* StockCompany.swift */,
 				DB283F512134974700DD8379 /* Main.storyboard */,
 				DB283F572134974A00DD8379 /* Assets.xcassets */,
 				DB283F592134974A00DD8379 /* LaunchScreen.storyboard */,
 				DB283F5C2134974A00DD8379 /* Info.plist */,
 				DB283F542134974700DD8379 /* PowerGrid_iPad.xcdatamodeld */,
-				DB283F8D2136113400DD8379 /* StockCompany.swift */,
 			);
 			path = "PowerGrid-iPad";
 			sourceTree = "<group>";
